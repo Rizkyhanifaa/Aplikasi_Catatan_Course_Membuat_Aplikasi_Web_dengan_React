@@ -1,0 +1,16 @@
+@import "tailwindcss";
+
+@layer utilities {
+  .bg-brand {
+    @apply bg-gradient-to-r from-pink-500 via-purple-500 to-blue-500 text-white;
+  }
+  
+  .border-brand {
+    border: 2px solid transparent;
+    background-image: linear-gradient(to right, #ec4899, #a855f7, #3b82f6); /* sama kayak bg-brand */
+    background-origin: border-box;
+    background-clip: padding-box, border-box;
+    box-shadow: 2px 1000px 1px #fff inset; /* biar dalamnya tetap putih */
+  }
+
+}
